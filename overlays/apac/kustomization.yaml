@@ -3,8 +3,10 @@ kind: Kustomization
 bases:
   - ../../base
 
+resources:
+- route.yaml
+
 patches:
 - deployment.yaml
-- route.yaml
 
 nameSuffix: -apac
