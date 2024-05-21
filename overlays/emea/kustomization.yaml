@@ -6,7 +6,9 @@ bases:
 resources:
 - route.yaml
 
-patches:
-- deployment.yaml
+images:
+  - name: mysql
+    newName: registry.redhat.io/rhel8/mysql-80
+    newTag: 1-156
 
 nameSuffix: -emea
